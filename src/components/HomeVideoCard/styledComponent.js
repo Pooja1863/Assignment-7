@@ -1,0 +1,56 @@
+import styled from 'styled-components'
+
+export const ListItem = styled.li`
+background: none;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-self: center;
+@media screen and (min-width: 768px) {
+  width: 280px;
+  margin-right: 20px;
+}
+`
+
+export const ThumbNailImage = styled.img`
+width: 100%;
+`
+export const VideoDetails = styled.div`
+width: 100%;
+display: flex;
+justify-content: flex-start;
+`
+export const ProfileImage = styled.img`
+width: 30px;
+height: 30px;
+border-radius: 50px;
+margin: 20px;
+`
+export const ContentSection = styled.div`
+display: flex;
+justify-content: flex-start;
+flex-direction: column;
+padding: 8px;
+`
+export const Title = styled.p`
+color: ${props => props.color};
+font-family: 'Roboto';
+font-size: 15px;
+`
+export const ChannelName = styled.p`
+color: ${props => props.color};
+font-family: 'Roboto';
+font-size: 13px;
+`
+export const ViewsAndDate = styled.p`
+color: ${props => props.color};
+font-family: 'Roboto';
+font-size: 12px;
+`
+export const Dot = styled.span`
+width: 20px;
+height: 20px;
+border-radius: 50%;
+padding-left: 5px;
+padding-right: 5px;
+`
